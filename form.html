@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>CAT ENERGY - Подбор программы</title>
+	</head>
+	<body>
+		<header class="page-header">
+			<div class="header-logo">
+				<img class="logo-image header-logo__image" src="" alt="cat-energy">
+				<p class="logo-text header-logo__text">Cat Energy</p>
+			</div>
+			<button class="top-menu-toggle" type="button"></button>
+			<nav class="top-menu">
+				<ul class="top-menu__list">
+					<li class="top-menu__item">Главная</li>
+					<li class="top-menu__item top-menu__item--active">Каталог продукции</li>
+					<li class="top-menu__item">Подбор программы</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="programm">
+				<h1 class="programm__title">Подбор программы</h1>
+				<p class="programm__into">Заполните анкету и мы подберем программу питания для вашего кота</p>
+				<form class="programm__form" action="" method="post">
+					<label for="name-field">Имя:*</label>
+					<input type="text" name="name" id="name-field" required>
+					<label for="weight-field">Вес (кг):*</label>
+					<input type="text" name="weight" id="weight-field" required>
+					<label for="age-field">Возраст (лет):*</label>
+					<input type="text" name="name" id="age-field" value="">
+					<div class="program__radio-block">
+						<input type="radio" name="losing-weight" id="losing-weight-field" checked>
+						<label for="losing-weight-field">Похудение</label>
+						<input type="radio" name="weight-gain" id="weight-gain-field" checked>
+						<label for="weight-gain-field">Набор массы</label>
+						<input type="radio" name="recommendation" id="recommendation-filed" checked>
+						<label for="recommendation-filed">Не знаю (нужен ваш совет)</label>
+					</div>
+					<fieldset class="programm__contacts"> <!-- -->
+						<legend class="programm__contacts-title"> <!-- -->
+							Контактные данные (владельца кота)
+						</legend>
+						<label for="email-field">E-mail:*</label>
+						<input type="email" name="email" id="email-field" placeholder="yourmail@mail.com" required>
+						<label for="tel-field">Телефон:*</label>
+						<input type="tel" name="tel" id="tel-field" placeholder="8 (960) 900-60-90" required>
+					</fieldset>
+					<fieldset class="programm__comment">
+						<textarea name="com" rows="5" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
+					</fieldset>
+					<fieldset class="programm__additionally">
+						<input type="checkbox" name="additionally" id="additionally-1" value="Сахарозаменитель">
+						<label for="additionally-1">Сахарозаменитель</label>
+						<input type="checkbox" name="additionally" id="additionally-2" value="Питьевая вода">
+						<label for="additionally-2">Молоко</label>
+						<input type="checkbox" name="additionally" id="additionally-3" value="Молоко">
+						<label for="additionally-3">Питьевая вода</label>
+						<input type="checkbox" name="additionally" id="additionally-4" value="Витамины">
+						<label for="additionally-4">Витамины</label>
+					</fieldset>
+					<input class="button button--green" type="submit" value="Отправить заявку">
+					<span class="programm__footnote">*—Обязательные поля</span>
+				</form>
+			</section>
+			<section class="map"> <!-- mobile block-gray -->
+				<h2 class="visually-hidden">Сотрудничество</h2>
+				<div class="map__text">
+					<p class="map__into">Приглашаем к сотрудничеству дилеров!</p>
+					<p class="map__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+				</div>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<div class="logo-text footer-logo__text">
+				Cat Energy
+			</div>
+			<div class="social">
+
+			</div>
+			<div class="copyright">
+				<span class="copyright__text">HTML Academy</span>
+				<img class="copyright__image" src="" alt="">
+			</div>
+		</footer>
+	</body>
+</html>
