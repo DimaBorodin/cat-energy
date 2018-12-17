@@ -3,146 +3,177 @@
 	<head>
 		<meta charset="utf-8">
 		<title>CAT ENERGY - Каталог продукции</title>
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,500&amp;subset=cyrillic" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<header class="page-header">
-			<div class="header-logo">
-				<img class="logo-image header-logo__image" src="" alt="cat-energy">
-				<p class="logo-text header-logo__text">Cat Energy</p>
+			<div class="page-header__top">
+				<div class="page-header__logo">
+					<img class="logo-image page-header__logo-image" src="" width="33" height="38" alt="cat-energy">
+					<p class="logo-text page-header__logo-text">Cat Energy</p>
+				</div>
+				<nav class="top-menu">
+					<button class="top-menu-toggle" type="button" hidden>+</button>
+					<ul class="top-menu__list">
+						<li class="top-menu__item"><a href="#" class="top-menu__link">Главная</a></li>
+						<li class="top-menu__item top-menu__item--active"><a class="top-menu__link">Каталог продукции</a></li>
+						<li class="top-menu__item"><a href="#" class="top-menu__link">Подбор программы</a></li>
+					</ul>
+				</nav>
 			</div>
-			<button class="top-menu-toggle" type="button"></button>
-			<nav class="top-menu">
-				<ul class="top-menu__list">
-					<li class="top-menu__item">Главная</li>
-					<li class="top-menu__item top-menu__item--active">Каталог продукции</li>
-					<li class="top-menu__item">Подбор программы</li>
-				</ul>
-			</nav>
 		</header>
 		<main>
 			<section class="catalog">
-				<h1 class="catalog__title">Каталог продукции</h1>
-				<div class="catalog__list"> <!-- -->
-					<div class="product"> <!-- class + article -->
-						<div class="product__image-wrapper">
-							<img class="product__image" src="" alt="">
-						</div>
-						<h2 class="product__title">Cat Energy 500 г</h2>
-						<table class="product__spec">
-							<tr>
-								<td>Объем</td>
-								<td>500 г</td>
-							</tr>
-							<tr>
-								<td>Вкус</td>
-								<td>Курица</td>
-							</tr>
-							<tr>
-								<td>Цена</td>
-								<td>700 Р.</td>
-							</tr>
-						</table>
-						<button class="button button--green" type="button" name="button">Заказать</button>
-					</div>
-					<div class="product">
-						<div class="product__image-wrapper">
-							<img class="product__image" src="" alt="">
-						</div>
-						<h2 class="product__title">Cat Energy 500 г</h2>
-						<table class="product__spec">
-							<tr>
-								<td>Объем</td>
-								<td>500 г</td>
-							</tr>
-							<tr>
-								<td>Вкус</td>
-								<td>Курица</td>
-							</tr>
-							<tr>
-								<td>Цена</td>
-								<td>700 Р.</td>
-							</tr>
-						</table>
-						<button class="button button--green" type="button" name="button">Заказать</button>
-					</div>
-					<div class="product">
-						<div class="product__image-wrapper">
-							<img class="product__image" src="" alt="">
-						</div>
-						<h2 class="product__title">Cat Energy 500 г</h2>
-						<table class="product__spec">
-							<tr>
-								<td>Объем</td>
-								<td>500 г</td>
-							</tr>
-							<tr>
-								<td>Вкус</td>
-								<td>Курица</td>
-							</tr>
-							<tr>
-								<td>Цена</td>
-								<td>700 Р.</td>
-							</tr>
-						</table>
-						<button class="button button--green" type="button" name="button">Заказать</button>
-					</div>
-					<div class="product product--to-all">
-						<h2 class="product__title">Показать еще 100500 товаров</h2>
-						<p class="product__text">На самом деле вкусов гораздо больше!</p>
-						<button class="button button--grey" type="button" name="button">Показать все</button>
-					</div>
+				<div class="catalog__wrapper wrapper">
+					<h1 class="catalog__title">Каталог продукции</h1>
+					<ul class="catalog__list">
+						<li class="product">
+							<div class="product__image-wrapper">
+								<img class="product__image" src="" alt="">
+							</div>
+							<div class="product__text">
+								<h2 class="product__title">Cat Energy 500 г</h2>
+								<table class="product__spec">
+									<tr>
+										<td>Объем</td>
+										<td>500 г</td>
+									</tr>
+									<tr>
+										<td>Вкус</td>
+										<td>Курица</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>700 Р.</td>
+									</tr>
+								</table>
+							</div>
+							<button class="button button--green" type="button" name="button">Заказать</button>
+						</li>
+						<li class="product">
+							<div class="product__image-wrapper">
+								<img class="product__image" src="" alt="">
+							</div>
+							<div class="product__text">
+								<h2 class="product__title">Cat Energy 500 г</h2>
+								<table class="product__spec">
+									<tr>
+										<td>Объем</td>
+										<td>500 г</td>
+									</tr>
+									<tr>
+										<td>Вкус</td>
+										<td>Курица</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>700 Р.</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>700 Р.</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>700 Р.</td>
+									</tr>
+								</table>
+							</div>
+							<button class="button button--green" type="button" name="button">Заказать</button>
+						</li>
+						<li class="product">
+							<div class="product__image-wrapper">
+								<img class="product__image" src="" alt="">
+							</div>
+							<div class="product__text">
+								<h2 class="product__title">Cat Energy 500 г</h2>
+								<table class="product__spec">
+									<tr>
+										<td>Объем</td>
+										<td>500 г</td>
+									</tr>
+									<tr>
+										<td>Вкус</td>
+										<td>Курица</td>
+									</tr>
+									<tr>
+										<td>Цена</td>
+										<td>700 Р.</td>
+									</tr>
+								</table>
+							</div>
+							<button class="button button--green" type="button" name="button">Заказать</button>
+						</li>
+						<li class="product product--to-all">
+							<div class="product__text">
+								<h2 class="product__title">Показать еще 100500 товаров</h2>
+								<p class="product__note">На самом деле вкусов гораздо больше!</p>
+							</div>
+							<button class="button button--grey" type="button" name="button">Показать все</button>
+						</li>
+					</ul>
 				</div>
 			</section>
 			<section class="extra_products">
-				<h2 class="extra_products__title">Дополнительные товары</h2>
-				<div class="extra_products__list"> <!-- -->
-					<div class="extra_products__item"> <!-- -->
-						<h3 class="extra_products__item-title">Сахарозаменитель</h3> <!-- -->
-						<span class="extra_products__item-volume">1 упаковка (100 г)</span> <!-- -->
-						<span class="extra_products__item-price">200 Р.</span>
-						<button class="button button--green" type="button" name="button"></button>
+				<div class="extra_products__wrapper wrapper">
+					<h2 class="extra_products__title">Дополнительные товары</h2>
+					<ul class="extra_products__list">
+						<li class="extra_products__item">
+							<h3 class="extra_products__item-title">Сахарозаменитель</h3>
+							<span class="extra_products__item-volume">1 упаковка (100 г)</span>
+							<span class="extra_products__item-price">200 Р.</span>
+							<button class="button button--green" type="button" name="button">Заказать</button>
+						</li>
+						<li class="extra_products__item">
+							<h3 class="extra_products__item-title">Питьевая вода</h3>
+							<span class="extra_products__item-volume">5 литров</span>
+							<span class="extra_products__item-price">50 Р.</span>
+							<button class="button button--green" type="button" name="button">Заказать</button>
+						</li>
+						<li class="extra_products__item">
+							<h3 class="extra_products__item-title">Молоко</h3>
+							<span class="extra_products__item-volume">1 литр</span>
+							<span class="extra_products__item-price">100 Р.</span>
+							<button class="button button--green" type="button" name="button">Заказать</button>
+						</li>
+						<li class="extra_products__item">
+							<h3 class="extra_products__item-title">Витамины</h3>
+							<span class="extra_products__item-volume">1 упаковка (30 г)</span>
+							<span class="extra_products__item-price">300 Р.</span>
+							<button class="button button--green" type="button" name="button">Заказать</button>
+						</li>
+					</ul>
+					<div class="extra_products__banner">
+						<p class="extra_products__banner-text">Закажите все и получите чехол в подарок!</p> <!-- + ссылка -->
 					</div>
-					<div class="extra_products__item">
-						<h3 class="extra_products__item-title">Питьевая вода</h3>
-						<span class="extra_products__item-volume">5 литров</span>
-						<span class="extra_products__item-price">50 Р.</span>
-						<button class="button button--green" type="button" name="button"></button>
-					</div>
-					<div class="extra_products__item">
-						<h3 class="extra_products__item-title">Молоко</h3>
-						<span class="extra_products__item-volume">1 литр</span>
-						<span class="extra_products__item-price">100 Р.</span>
-						<button class="button button--green" type="button" name="button"></button>
-					</div>
-					<div class="extra_products__item">
-						<h3 class="extra_products__item-title">Витамины</h3>
-						<span class="extra_products__item-volume">1 упаковка (30 г)</span>
-						<span class="extra_products__item-price">300 Р.</span>
-						<button class="button button--green" type="button" name="button"></button>
-					</div>
-				</div>
-				<div class="extra_products__banner">
-					<p class="extra_products__banner-text"></p> <!-- -->
 				</div>
 			</section>
-			<section class="map">
-				<h2 class="visually-hidden">Сотрудничество</h2>
-				<div class="map__text">
-					<p class="map__into">Приглашаем к сотрудничеству дилеров!</p>
-					<p class="map__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+			<section class="contacts contacts--catalog-page">
+				<h2 class="visually-hidden" hidden>Контакты</h2>
+				<div class="contacts__wrapper wrapper">
+					<div class="contacts__text">
+						<p class="contacts__into">Приглашаем к сотрудничеству дилеров!</p>
+						<p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+					</div>
+				</div>
+				<div class="map">
+
 				</div>
 			</section>
 		</main>
 		<footer class="page-footer">
-			<div class="logo-text footer-logo__text">
-				Cat Energy
-			</div>
-			<div class="social">
-
-			</div>
-			<div class="copyright">
-				<span class="copyright__text">HTML Academy</span>
-				<img class="copyright__image" src="" alt="">
+			<div class="page-footer__wrapper wrapper">
+				<div class="page-footer__site">
+					Cat Energy
+				</div>
+				<div class="page-footer__social">
+					VK INST F
+				</div>
+				<div class="page-footer__copyright">
+					<span class="copyright__text">HTML Academy</span>
+					<img class="copyright__image" src="" alt="">
+				</div>
 			</div>
 		</footer>
 	</body>
