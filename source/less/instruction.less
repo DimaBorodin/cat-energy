@@ -1,0 +1,147 @@
+.instruction {
+  margin-bottom: 42px;
+}
+
+.instruction__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 1;
+  color: @black;
+}
+
+.instruction__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instruction__item:last-child {
+  margin-bottom: 0;
+}
+
+.instruction__item::before {
+  content: "";
+  display: block;
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: #68b738;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+}
+
+.instruction__item--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+}
+
+.instruction__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+}
+
+.instruction__item--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+}
+
+.instruction__item--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
+}
+
+@media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+  .instruction__item--leaf::before {
+    background-image: url("../img/advantage-leaf@2x.png");
+  }
+
+  .instruction__item--powder::before {
+    background-image: url("../img/advantage-powder@2x.png");
+  }
+
+  .instruction__item--dining::before {
+    background-image: url("../img/advantage-dining@2x.png");
+  }
+
+  .instruction__item--clock::before {
+    background-image: url("../img/advantage-clock@2x.png");
+  }
+}
+
+.instruction__item-text {
+  flex-shrink: 1;
+  font-family: 'Arial';
+  font-weight: normal;
+}
+
+@media (min-width: @tablet-width) {
+  .instruction {
+    margin-bottom: 0;
+  }
+
+  .instruction__title {
+    margin-bottom: 71px;
+    font-size: 60px;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    counter-reset: item;
+  }
+
+  .instruction__item {
+    box-sizing: border-box;
+    display: block;
+    width: 34.60%;
+    min-height: 230px;
+    margin-right: 19.63%;
+    margin-bottom: 87px;
+
+    &::after {
+      counter-increment: item;
+      content: counter(item);
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 135px;
+      font-size: 281px;
+      line-height: 205px;
+      color: #f2f2f2;
+      text-align: center;
+      z-index: -1;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .instruction__item:last-child {
+    margin-bottom: 87px;
+  }
+
+  .instruction__item--leaf::after {
+    right: 4px;
+  }
+
+  .instruction__item::before {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 31px 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .instruction__item {
+    width: 20.08%;
+    margin-right: 6.55%;
+
+    &:nth-child(2n) {
+      margin-right: 6.55%;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+}

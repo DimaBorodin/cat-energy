@@ -1,0 +1,258 @@
+.catalog {
+  padding-top: 5px;
+}
+
+.catalog__title {
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 1;
+  color: @black;
+}
+
+.catalog__list {
+  margin-bottom: 29px;
+}
+
+.product {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px -20px 0;
+  padding: 0 20px;
+  border-top: 1px solid #ededed;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.product__image-wrapper {
+  display: block;
+  width: 140px;
+  height: 144px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.product__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.product__title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 20px;
+  color: @black;
+  text-transform: uppercase;
+}
+
+.product__text {
+  width: 140px;
+  margin: 21px 0;
+  overflow-x: auto;
+}
+
+.product__spec {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: 'Arial';
+}
+
+.product__spec tr {
+  vertical-align: top;
+}
+
+.product__spec td {
+  padding: 0;
+}
+
+.product__spec td:first-child {
+  padding-right: 10px;
+}
+
+.product__spec td:last-child {
+  text-align: right;
+}
+
+.product--to-all {
+  padding-top: 58px;
+  padding-bottom: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: 26px;
+    margin: 0 auto;
+    background-image: url("../img/catalog/icon-plus-mobile.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
+.product--to-all .product__title {
+  text-align: center;
+}
+
+.product__note {
+  margin-top: -4px;
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+
+@media (max-width: @mobile-width-only) {
+  .product--to-all .product__text {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .product__image {
+    width: 140px;
+    height: 144px;
+  }
+
+  .product__title br:nth-child(2) {
+    display: none;
+  }
+
+  .product--to-all .product__text br {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    padding-top: 14px;
+  }
+
+  .catalog__title {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+
+  .product__title br:nth-child(1) {
+    display: none;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 105px;
+    margin-bottom: -73px;
+  }
+
+  .product {
+    flex-direction: column;
+    width: 324px;
+    margin: 0 0 140px;
+    padding: 40px 38px;
+    padding-top: 0;
+    background-color: @grey;
+    border: 0;
+  }
+
+  .product__image-wrapper {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 245px;
+    height: auto;
+    overflow: visible;
+  }
+
+  .product__image {
+    position: absolute;
+    bottom: -126px;
+    width: 245px;
+    max-height: 208px;
+  }
+
+  .product__title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .product__text {
+    width: 100%;
+    margin-top: 158px;
+    margin-bottom: 33px;
+  }
+
+  .product__spec {
+    font-size: 16px;
+  }
+
+  .product__spec tr {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__spec td {
+    padding: 8px 0;
+  }
+
+  .product--to-all {
+    background-color: @white;
+    border: 1px solid #e6e6e6;
+  }
+
+  .product--to-all::before {
+    top: 54px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/catalog/icon-plus.svg");
+    background-size: 60px 60px;
+  }
+
+  .product--to-all .product__text br {
+    display: block;
+  }
+
+  .product--to-all .product__title {
+    margin-bottom: 30px;
+  }
+
+  .product__note {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .product .button {
+    margin-top: auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog {
+    padding-top: 1px;
+  }
+
+  .product {
+    width: 20.08%;
+    margin-right: 6.55%;
+    margin-bottom: 142px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__list {
+    justify-content: flex-start;
+    margin-bottom: -67px;
+  }
+}

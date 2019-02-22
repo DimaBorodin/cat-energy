@@ -1,0 +1,247 @@
+@font-face {
+    font-family: "Oswald";
+    src:
+      local("Oswald"),
+      local("Oswald Regular"),
+      local("Oswald-Regular"),
+      url(../fonts/oswaldregular.woff2) format("woff2"),
+      url(../fonts/oswaldregular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Oswald";
+    src:
+      local("Oswald Medium"),
+      local("Oswald-Medium"),
+      url(../fonts/oswaldmedium.woff2) format("woff2"),
+      url(../fonts/oswaldmedium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* variables */
+
+@white: #ffffff;
+@black: #111111;
+@grey: #f2f2f2;
+@darkgrey: #444444;
+
+@tablet-width: 768px;
+@desktop-width: 1300px;
+@mobile-width-only: 767px;
+@tablet-width-only: 1299px;
+@retina-dpi: 144dpi;
+@retina-dppx: 1.5dppx;
+
+/*scaffolding */
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  background-color: @white;
+  font-family: 'Oswald', 'Arial', sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: @darkgrey;
+}
+
+@media (min-width: @tablet-width) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: 400;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: @black;
+}
+
+ul,
+li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+}
+
+label {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0 15px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 43px;
+  text-transform: uppercase;
+  color: @darkgrey;
+  border: 1px solid #e6e6e6;
+}
+
+textarea {
+  height: 150px;
+  padding: 12px 13px 13px;
+  resize: none;
+  overflow: auto;
+  font-family: 'Oswald', sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: @darkgrey;
+  border: 1px solid #e6e6e6;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  border-color: #cdcdcd;
+}
+
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="tel"]:active,
+input[type="tel"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus,
+textarea:active,
+textarea:focus {
+  border-color: #444444;
+  box-shadow: inset 0 0 0 1px #444444;
+  outline: none;
+}
+
+input:focus:invalid {
+  border-color: #ff8282;
+  box-shadow: inset 0 0 0 1px #ff8282;
+}
+
+@media (min-width: @tablet-width) {
+  label {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"] {
+    height: 52px;
+    padding: 0 19px;
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  textarea {
+    height: 174px;
+    padding: 10px 18px 14px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: @darkgrey;
+  opacity: 1;
+}
+
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+table {
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  width: auto;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.page-main {
+  display: block;
+  overflow: hidden;
+}
+
+@media (min-width: @tablet-width) {
+  .wrapper {
+    max-width: 768px;
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .wrapper {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+}
+
+@import "page-header.less";
+@import "top-menu.less";
+@import "button.less";
+@import "programm.less";
+@import "instruction.less";
+@import "live-example.less";
+@import "contacts.less";
+@import "page-footer.less";
+@import "social.less";
+@import "developer.less";
+@import "catalog/catalog.less";
+@import "catalog/extra_products.less";
+@import "form/programm-form.less";

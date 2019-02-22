@@ -1,0 +1,37 @@
+.developer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: opacity 0.3s;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.developer__text {
+  margin-top: -2px;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Arial";
+  color: #444444;
+}
+
+.developer__icon {
+  fill: #666666;
+  transition: fill 0.3s;
+}
+
+.developer:hover .developer__icon {
+  fill: #68b738;
+}
+
+@media (min-width: @tablet-width) {
+  .developer {
+    justify-content: flex-end;
+  }
+
+  .developer__text {
+    margin-right: 23px;
+  }
+}

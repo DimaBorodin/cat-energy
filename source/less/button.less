@@ -1,0 +1,63 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 100%;
+  padding: 10px; //был 13 или button-submit отдельно сделать 10px
+  font-size: 16px;
+  line-height: 20px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  transition:
+    opacity 0.3s,
+    background-color 0.3s,
+    color 0.3s;
+
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.button--programm-select {
+  padding: 11px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.button--green {
+  background-color: #68b738;
+  color: @white;
+
+  &:hover,
+  &:active {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--grey {
+  //padding: 17px 26px;
+  background-color: @grey;
+  color: @darkgrey;
+
+  &:hover,
+  &:active {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .button--programm-select,
+  .button--submit {
+    width: auto;
+    padding: 17px 28px 18px 26px;
+    font-size: 20px;
+  }
+}
